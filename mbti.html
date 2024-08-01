@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>ランダムMBTI</title>
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="progressbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +20,7 @@
         <div class="grobal-nav">
             <a href="#"><img src="img/logo.png"></a>
         </div>
-        <header>
+        <div class="header">
             <h1>無料ランダムMBTI割り当て</h1>
             <div class=trademark>
                 <p>Random MBTI Assignment</p>
@@ -46,21 +48,105 @@
 
                 </div>
             </div>
-        </header>
-        <p>あなたのMBTIタイプをランダムに診断します．</p>
-        <p>相性が良い，悪いタイプもランダムに診断されます．</p>
-        <div class=shindan_button>
-            <button id="create-mbti">診断する</button>
         </div>
-        <p id="your"></p>
-        <p id="aisho"></p>
-        <p id="personality_0"></p>
-        <div id="p_0">
+        <!--結果書き込みエリア-->
+        <div class="result_area hidden" id="r_area">
+            <h1 id="mbti_type_h1"></h1>
+            <h2 class="mbti_type_h2">これらのランダム性格テストの結果を確認すると,この性格タイプと核となる特性に関する詳細について知ることができます．</h2>
+            <div class="data_area">
+                <div id="personality_type">
+                    <!--性格タイプの表示-->
+                    <p class="seikakutype">性格タイプ：</p>
+                    <p id="mbti_result"></p>
+                    <div class="">
+                    </div>
+                    <div class="setumeigaki_area">
+                        <p id="setumei"></p>
+                        <button id="shosaibutton">詳細はこちら →</button>
+                    </div>
+                </div>
+                <!--特性情報-->
+                <div id="tokusei">
+                    <div class="bar_area">
+                        <p class="seikaku_title">性格特性:</p>
+                        <!--青いバー-->
+                        <div class="p_bar" style="width: calc(100% - 36px);">
+                            <div class="item_name">
+                                <p id="ene_dsc">エネルギー：50%</p>
+                            </div>
+                            <div class="bar" id="ene">
+                            </div>
+                            <div class="bar_txt">
+                                <p class="left">外向型</p>
+                                <p class="right">内向型</p>
+                            </div>
+                        </div>
+                        <!--黄色バー-->
+                        <div class="p_bar" style="width: calc(100% - 36px);">
+                            <div class="item_name">
+                                <p id="isi_dsc">エネルギー：50%</p>
+                            </div>
+                            <div class="bar" id="ishiki">
+                            </div>
+                            <div class="bar_txt">
+                                <p class="left">直感型</p>
+                                <p class="right">観察型</p>
+                            </div>
+                        </div>
+                        <!--緑バー-->
+                        <div class="p_bar" style="width: calc(100% - 36px);">
+                            <div class="item_name">
+                                <p id="kst_dsc">エネルギー：50%</p>
+                            </div>
+                            <div class="bar" id="kishitsu">
+                            </div>
+                            <div class="bar_txt">
+                                <p class="left">思考型</p>
+                                <p class="right">感情型</p>
+                            </div>
+                        </div>
+                        <!--紫バー-->
+                        <div class="p_bar" style="width: calc(100% - 36px);">
+                            <div class="item_name">
+                                <p id="sen_dsc">戦術：50%</p>
+                            </div>
+                            <div class="bar" id="senjutsu">
+                            </div>
+                            <div class="bar_txt">
+                                <p class="left">計画型</p>
+                                <p class="right">探索型</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p id="personality_1"></p>
-        <p id="personality_2"></p>
-        <p id="personality_3"></p>
-        <progress max="100" value="30"></progress>
+        <!--結果書き込みエリアここまで-->
+        <div class="kyokai"></div>
+        <div id="dam">
+            <div class="shindan_button">
+                <button id="create-mbti" class="sindan">診断する
+                </button>
+            </div>
+        </div>
+
+        <!--ここから下テスト用-->
+        <div class="test_area">
+            <p>テストエリア</p>
+            <p id="num"></p>
+            <p id="your"></p>
+            <p id="aisho"></p>
+            <p id="personality_0"></p>
+            <div id="p_0">
+            </div>
+            <p id="personality_1"></p>
+            <p id="personality_2"></p>
+            <p id="personality_3"></p>
+            <p id="yy"></p>
+            <progress max="100" value="30"></progress>
+            <div id="re_button">
+            </div>
+        </div>
         <!--以下スクリプト読み込み以外書き込み禁止-->
         <script src="random-mbti.js"></script>
 </body>

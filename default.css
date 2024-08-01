@@ -11,6 +11,10 @@ div.contents {
 
 div.grobal-nav {
     height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
 
     @media screen and (min-width:767px) {
         height: 80px;
@@ -22,15 +26,19 @@ div.grobal-nav img {
     margin-left: 10px;
 }
 
-header {
+div.header {
     width: 100%;
     padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 60px;
     background-color: #33a474;
+
     /*height: 400px;*/
+    @media screen and (min-width:767px) {
+        margin-top: 80px;
+    }
 }
 
-header h1 {
+div.header h1 {
     margin-top: 0;
     display: flex;
     align-items: end;
@@ -51,6 +59,11 @@ header h1 {
         font-size: 40px;
         height: 108px;
     }
+
+    @media screen and (max-width:400px) {
+        font-size: 20px;
+        height: 54px;
+    }
 }
 
 div.trademark p {
@@ -68,6 +81,10 @@ div.trademark p {
     @media screen and (min-width:767px) {
         font-size: 30px;
     }
+
+    @media screen and (max-width:400px) {
+        font-size: 15px;
+    }
 }
 
 /*説明部分のスタイル*/
@@ -77,8 +94,14 @@ div.guide {
 
     @media screen and (min-width:767px) {
         display: flex;
-        width: 766px;
+        width: 765px;
         margin-left: calc((100% - 767px) / 2)
+    }
+
+    @media screen and (min-width:1140px) {
+        display: flex;
+        width: 1140px;
+        margin-left: calc((100% - 1140px) / 2)
     }
 }
 
@@ -91,19 +114,26 @@ div.description {
     border-radius: 15px;
     background-color: #d6ede3;
     width: 560px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
 
     @media screen and (max-width:600px) {
         width: calc(100% - 40px);
     }
 
     @media screen and (min-width:767px) {
-        width: 250px;
+        width: 240px;
         display: block;
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    @media screen and (min-width:1140px) {
+        width: 360px;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -113,6 +143,19 @@ div.description img {
     width: 40px;
     padding-left: 8px;
     padding-right: 8px;
+
+    @media screen and (min-width:767px) {
+        width: 70px;
+        float: none;
+        padding-left: 90px;
+    }
+
+    @media screen and (min-width:1140px) {
+        width: 100px;
+        float: none;
+        padding-left: 130px;
+    }
+
 }
 
 div.text_area {
@@ -125,9 +168,16 @@ div.description p {
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
-    color: #576071;
+    color: #343c4b;
     padding-left: 0px;
     padding-right: 15px;
+
+    @media screen and (min-width:767px) {
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 12px;
+        margin: auto 0;
+    }
 }
 
 div.qb {
@@ -138,9 +188,13 @@ div.qb {
 /*ボタン*/
 div.shindan_button {
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    background-color: #ffffff;
 }
 
-button {
+#create-mbti {
     display: block;
     background-color: #88619a;
     border: none;
@@ -167,13 +221,22 @@ p {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color: #576071;
+    color: #343c4b;
 }
 
-progress {
-    -webkit-appearance: none;
+div.kyokai {
+    width: 100%;
+    height: 60px;
 }
 
-::webkit-progress-value {
-    background-color: red;
+#dam {
+    width: 100vw;
+    height: 100px;
+    margin-top: 10px;
+}
+
+div.test_area {
+    width: 100%;
+    background-color: antiquewhite;
+    display: none;
 }

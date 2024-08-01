@@ -1,0 +1,141 @@
+body {
+    --bh: 10px;
+    --ch: 4px;
+    --lh: 3px;
+}
+
+div.bar_area {
+    width: 100%;
+    margin-left: 18px;
+}
+
+div.bar {
+    height: var(--bh);
+    border-radius: var(--bh);
+    width: 100%;
+    background-color: black;
+}
+
+div.dot {
+    position: relative;
+    right: var(--lh);
+    bottom: var(--lh);
+    height: var(--bh);
+    width: var(--bh);
+    border: solid var(--lh);
+    border-color: #ffffff;
+    border-radius: var(--bh);
+    background-color: none;
+}
+
+/*色*/
+#ene {
+    background-color: #4298b4;
+}
+
+#ishiki {
+    background-color: #e4ae3a;
+}
+
+#kishitsu {
+    background-color: #33a474;
+}
+
+#senjutsu {
+    background-color: #88619a;
+}
+
+/*結果処理文字まわり*/
+div.p_bar p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #343c4b;
+}
+
+strong.font-blue {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #4298b4;
+}
+
+strong.font-yellow {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #e4ae3a;
+}
+
+strong.font-green {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #33a474;
+}
+
+strong.font-purple {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #88619a;
+}
+
+strong.emp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #343c4b;
+}
+
+p.seikaku_title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 13pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #343c4b;
+}
+
+div.item_name {
+    margin: 0;
+}
+
+div.item_name p {
+    margin-bottom: 8px;
+}
+
+div.bar_txt {
+    display: flow-root;
+}
+
+div.bar_txt p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 9pt;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #343c4b;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+p.left {
+    float: left;
+}
+
+p.right {
+    float: right;
+}

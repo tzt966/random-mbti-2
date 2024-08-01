@@ -1,0 +1,235 @@
+body {
+    --1p: 1px;
+    --3p: 3px;
+    --b1: 1%;
+    --b2: 45%;
+}
+
+div.hidden {
+    display: none;
+}
+
+div.result_area {
+    width: calc(100%-40px);
+    margin: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+
+    @media screen and (min-width:767px) {
+        width: 748px;
+        height: 450px;
+    }
+
+    @media screen and (min-width:1140px) {
+        width: 1120px;
+        height: 500px;
+    }
+}
+
+#mbti_type_h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #343c4b;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    @media screen and (max-width:767px) {
+        font-size: 30px;
+    }
+}
+
+h2.mbti_type_h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #343c4b;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @media screen and (max-width:767px) {
+        font-size: 15px;
+        margin-top: 9px;
+    }
+}
+
+#data_area {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#personality_type {
+    width: calc((100% - 20px) / 2);
+    float: left;
+    border-radius: 10px;
+    height: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #c6af7b;
+    border: solid 1px;
+    border-color: #707a8c;
+    box-shadow: 0 0 3px 0 #707a8c;
+    position: relative;
+
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        float: none;
+        min-height: 320px;
+    }
+}
+
+/*性格タイプの背景変更）*/
+div.purple {
+    background: linear-gradient(#88619a var(--b1), #f3eff5 var(--b1), #f3eff5 var(--b2), #ffffff var(--b2));
+}
+
+div.green {
+    background: linear-gradient(#33a474 var(--b1), #e5eff3 var(--b1), #e5eff3 var(--b2), #ffffff var(--b2));
+}
+
+div.blue {
+    background: linear-gradient(#4298b4 var(--b1), #e5eff3 var(--b1), #e5eff3 var(--b2), #ffffff var(--b2));
+}
+
+div.yellow {
+    background: linear-gradient(#e4ae3a var(--b1), #f2eee6 var(--b1), #f2eee6 var(--b2), #ffffff var(--b2));
+}
+
+div.red {
+    background-color: red;
+}
+
+
+
+
+/*性格タイプ文字のスタイル*/
+p.seikakutype {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #343c4b;
+    font-size: 14px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 30px;
+
+    @media screen and (max-width:767px) {
+        height: 20px;
+        align-items: end;
+        font-size: 10px;
+    }
+}
+
+#mbti_result {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #343c4b;
+    font-size: 20px;
+    height: 25px;
+    align-items: start;
+    justify-content: center;
+
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+    }
+}
+
+#setumei {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #343c4b;
+    font-size: 15px;
+}
+
+/*説明文エリアのスタイル*/
+div.setumeigaki_area {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: calc(100% - 50px);
+    height: 45%;
+}
+
+/*詳細ボタン*/
+/*ボタンの色*/
+
+#shosaibutton {
+    display: block;
+    position: absolute;
+    left: 0;
+    border: none;
+    width: 160px;
+    height: 36px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 0 auto;
+    /*文字まわり処理*/
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+button.purple {
+    background-color: #88619a;
+}
+
+button.blue {
+    background-color: #4298b4;
+}
+
+button.green {
+    background-color: #33a474;
+}
+
+button.yellow {
+    background-color: #e4ae3a;
+}
+
+/*特性情報エリア*/
+#tokusei {
+    width: calc((100% - 20px) / 2);
+    float: left;
+    border-radius: 10px;
+    height: 400px;
+    margin-left: 15px;
+    margin-right: 0;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-color: #707a8c;
+    box-shadow: 0 0 3px 0 #707a8c;
+
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        float: none;
+        min-height: 320px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
