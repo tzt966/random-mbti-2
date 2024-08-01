@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ランダムMBTI</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contents">
+        <div class="grobal-nav">
+            <a href="#"><img src="img/logo.png"></a>
+        </div>
+        <header>
+            <h1>無料ランダムMBTI割り当て</h1>
+            <div class=trademark>
+                <p>Random MBTI Assignment</p>
+            </div>
+            <div class="guide">
+                <div class="description">
+                    <img src="img/computer0.png">
+                    <div class="text_area">
+                        <p>自分の性格タイプを明らかにするため，ありのままの自分で正直にボタンを押してください．</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <img src="img/random.png">
+                    <div class="text_area">
+                        <p>自分の性格タイプが人生にどのような影響を与えるかは，ランダムに決まります．</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <img src="img/saikoro.png">
+                    <div class="text_area">
+                        <p>診断ボタンを何回も押せば，いつかなりたい自分になれるかもしれません．</p>
+                    </div>
+                </div>
+                <div class="qb">
+
+                </div>
+            </div>
+        </header>
+        <p>あなたのMBTIタイプをランダムに診断します．</p>
+        <p>相性が良い，悪いタイプもランダムに診断されます．</p>
+        <div class=shindan_button>
+            <button id="create-mbti">診断する</button>
+        </div>
+        <p id="your"></p>
+        <p id="aisho"></p>
+        <p id="personality_0"></p>
+        <div id="p_0">
+        </div>
+        <p id="personality_1"></p>
+        <p id="personality_2"></p>
+        <p id="personality_3"></p>
+        <progress max="100" value="30"></progress>
+        <!--以下スクリプト読み込み以外書き込み禁止-->
+        <script src="random-mbti.js"></script>
+</body>
+
+</html>
