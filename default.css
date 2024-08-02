@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #F6F6F7;
     margin: 0;
     padding: 0;
 }
@@ -15,6 +15,7 @@ div.grobal-nav {
     top: 0;
     width: 100%;
     background-color: #ffffff;
+    z-index: calc(infinity);
 
     @media screen and (min-width:767px) {
         height: 80px;
@@ -191,7 +192,6 @@ div.shindan_button {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 40px;
-    background-color: #ffffff;
 }
 
 #create-mbti {
@@ -225,6 +225,7 @@ p {
 }
 
 div.kyokai {
+    display: none;
     width: 100%;
     height: 60px;
 }

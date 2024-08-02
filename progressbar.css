@@ -26,6 +26,7 @@ div.dot {
     border-color: #ffffff;
     border-radius: var(--bh);
     background-color: none;
+    box-shadow: 0 0 3px #343c4b;
 }
 
 /*色*/

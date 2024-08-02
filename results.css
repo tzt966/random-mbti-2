@@ -15,16 +15,15 @@ div.result_area {
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #ffffff;
 
     @media screen and (min-width:767px) {
         width: 748px;
-        height: 450px;
+        height: 600px;
     }
 
     @media screen and (min-width:1140px) {
         width: 1120px;
-        height: 500px;
+        height: 600px;
     }
 }
 
@@ -83,6 +82,12 @@ h2.mbti_type_h2 {
     @media screen and (max-width:767px) {
         width: 100%;
         float: none;
+        min-height: 320px;
+    }
+
+    @media screen and (min-width:1140px) {
+        width: 360px;
+        float: left;
         min-height: 320px;
     }
 }
@@ -232,4 +237,24 @@ button.yellow {
         margin-left: 0;
         margin-top: 20px;
     }
+
+    @media screen and (min-width:1140px) {
+        width: 740px;
+        float: left;
+        min-height: 320px;
+    }
+}
+
+div.seikaku_title_area {
+    width: 100%;
+    padding-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: solid 1px;
+    border-color: #707a8c;
+}
+
+
+div.seikaku_title_area p {
+    margin-left: 18px;
 }
